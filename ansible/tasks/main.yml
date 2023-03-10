@@ -1,0 +1,14 @@
+---
+- name: Cloning relayer repository
+  git:
+    repo: https://github.com/fiatjaf/relayer.git
+    dest: /opt/relayer/
+    clone: yes
+
+- name: Bringing up relayer basic via docker compose
+  docker_compose:
+    project_src: /opt/relayer/basic
+    build: no
+    state: present
+  register: output
+...
