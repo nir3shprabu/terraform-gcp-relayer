@@ -15,7 +15,7 @@ crash.log
 #
 
 *.tfvars
-all-variables.tf
+# all-variables.tf
 
 # Ignore hosts file
 
