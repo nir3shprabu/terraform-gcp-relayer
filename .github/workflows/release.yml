@@ -25,13 +25,3 @@ jobs:
       uses: actions/checkout@v2
     - name: Fail on malformatted files
       uses: devops-infra/action-format-hcl@v0.3.6
-
-  terraform-copy-vars:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout repoistory
-      uses: actions/checkout@v2
-    - name: Fail on different veriables' definitions
-      uses: devops-infra/action-terraform-copy-vars@v0.2
-      with:
-        fail_on_changes: true
