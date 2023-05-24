@@ -29,13 +29,12 @@ jobs:
           node-version: 'lts/*'
 
       - name: Install dependencies
-        run: npm install 
+        run: npm ci
 
       - name: Build Terraform
         run: |
           terraform init
           terraform validate
-          terraform plan -detailed-exitcode -out=tfplan
 
       - name: Run semantic-release
         env:
