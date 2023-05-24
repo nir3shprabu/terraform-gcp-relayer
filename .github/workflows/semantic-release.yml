@@ -35,4 +35,4 @@ jobs:
         run: npx semantic-release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+        # place your github token in secrets
