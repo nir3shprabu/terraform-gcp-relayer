@@ -1,5 +1,5 @@
 {
-  "devDependencies": {
-    "semantic-release": "^21.0.2"
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
