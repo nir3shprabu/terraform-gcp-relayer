@@ -17,7 +17,6 @@ jobs:
       id-token: write # to enable use of OIDC for npm provenance
 
     name: Release
-    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
 
     steps:
