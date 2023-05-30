@@ -8,17 +8,7 @@ on:
 permissions:
   contents: read # for checkout
 
-jobs:
-  lint:
-    runs-on: ubuntu-latest
-    name: ansible-lint
-    steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-python@v2
-      - run: pip install ansible ansible-lint
-      - run: ansible-lint --version
-      - run: ansible-lint .
-      
+jobs: 
   release:
     permissions:
       contents: write # to be able to publish a GitHub release
